@@ -7466,7 +7466,7 @@ device_ramdisk() {
     log "Running devicetree"
     $irecovery -c devicetree
     log "Sending KernelCache..."
-    $irecovery -f Kernelcache.dec
+    $irecovery -f ./custom_kernels/kernelcache.release.n42.iPhone5,2.13A452.dec
     $irecovery -c bootx
 
     if [[ $1 == "justboot" ]]; then
